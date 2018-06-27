@@ -1,22 +1,20 @@
-<header></header>
-
-<div class="container content">
-  <!-- container centers content on large screens -->
+<div class="container">
+  <header class="bg-primary"><h1>Ajandam</h1></header>
   <div class="row">
-    <!-- responsive row has 12 columns by default -->
-    <div class="col-md-6">
-      1
-      <!-- uses 6 columns on medium and larger screens... -->
+    <div class="col-md-3">
+      <ul>
+        <li *ngFor="let item of todoLists;">
+          {{item}}
+        </li>
+      </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-9">
       <ul>
         <li *ngFor="let item of todoItems;">
           {{item}}
         </li>
       </ul>
-      <!-- uses 12 columns on smaller than medium screens -->
     </div>
   </div>
+  <footer class="bg-dark">Copyright &copy; 2018 - Murat Demirci</footer>
 </div>
-
-<footer></footer>
